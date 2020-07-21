@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso programación Platzi(Peso en marte)</title>
+    </head>
+    <body>
+        <h1>Tu peso en marte</h1>
+        <p>En Marte pesas mucho menos que en la Tierra</p>
+        <script>
+            var peso_usuario = prompt("Indica tu peso");
+            var g_tierra = 9.8;
+            var g_marte = 3.7;
+            var g_jupiter = 24.8;
+            //var peso =  parseInt(peso_usuario);
+            var peso =  parseFloat(peso_usuario);
+            var peso_final;
+
+            peso_final = (peso*g_marte)/g_tierra;
+            //peso_final = parseInt(peso_final) //funcion para convertir a entero
+            //peso_final = peso_final.toFixed(2); //función que convierte a un string y redeondea la precisión de decimales
+            peso_final = parseFloat(peso_final).toFixed(2);
+            
+            document.write("Mi peso en Marte es: <strong>" + peso_final + " Kg</strong>");
+
+        </script>
+    </body>
+</html>
